@@ -7,9 +7,19 @@
 //
 
 #include <iostream>
+#include <iostream>
+#include <cstdlib>
+#include "BinaryHeap.hpp"
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    
+    Heap<int> h;
+
+    h.insert(3);
+    h.insert(1);
+    h.insert(2);
+    
+    
     return 0;
 }
