@@ -15,12 +15,19 @@ using namespace std;
 int main(int argc, const char * argv[]) {
     
     Heap<int> h;
-
     
-    for (int i = 1; i < 12; ++i)
-        h.insert(i);
     
+    //    for (int i = 1; i < 12; ++i)
+    //        h.insert(i);
+    
+    h.insert(4);
+    h.insert(7);
+    h.insert(10);
+    h.insert(51);
+    h.insert(13);
     h.print();
+    h.remove();
+    
     
     
     return 0;
