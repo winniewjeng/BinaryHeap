@@ -20,13 +20,28 @@ int main(int argc, const char * argv[]) {
     //    for (int i = 1; i < 12; ++i)
     //        h.insert(i);
     
-    h.insert(4);
-    h.insert(7);
-    h.insert(10);
-    h.insert(51);
-    h.insert(13);
+    h.insert(57);
+    h.insert(98);
+    h.insert(86);
+    h.insert(97);
+    h.insert(29);
+    h.insert(75);
+    h.insert(70);
+    h.insert(36);
+    h.insert(20);
+    h.insert(44);
+    h.insert(88);
+
     h.print();
     h.remove();
+    h.print();
+    h.remove();
+    h.print();
+    h.remove();
+    h.print();
+    h.remove();
+    h.print();
+    
     
     
     
