@@ -16,9 +16,11 @@ int main(int argc, const char * argv[]) {
     
     Heap<int> h;
 
-    h.insert(3);
-    h.insert(1);
-    h.insert(2);
+    
+    for (int i = 1; i < 12; ++i)
+        h.insert(i);
+    
+    h.print();
     
     
     return 0;
