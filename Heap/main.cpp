@@ -15,48 +15,15 @@ using namespace std;
 int main(int argc, const char * argv[]) {
     
     Heap<int> h;
-    
-    
-    //    for (int i = 1; i < 12; ++i)
-    //        h.insert(i);
-//    98, 97,86,57,88,75,70,36,20,29,44
-    
-    h.insert(57);
-    h.insert(98);
-    h.insert(86);
-    h.insert(97);
-    h.insert(29);
-    h.insert(75);
-    h.insert(70);
-    h.insert(36);
-    h.insert(20);
-    h.insert(44);
-    h.insert(88);
-
-    h.print();
-    h.remove(); 
-    h.print();
-    h.remove();
-    h.print();
-    h.remove();
-    h.print();
-    h.remove();
-    h.print();
-    h.remove();
-    h.print();
-    h.remove();
-    h.print();
-    h.remove();
-    h.print();
-    h.remove();
-    h.print();
-    h.remove();
-    h.print();
-    h.remove();
-    h.print();
-//
-    
-    
+    int arr[] = {98, 97,86,57,88,75,70,36,20,29,44};
+    for (int i = 0; i < 11; ++i) {
+        h.insert(arr[i]);
+        h.print();
+    }
+    for (int i = 0; i < 11; ++i) {
+        h.remove();
+        h.print();
+    }
     
     return 0;
 }
