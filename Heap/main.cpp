@@ -19,6 +19,7 @@ int main(int argc, const char * argv[]) {
     
     //    for (int i = 1; i < 12; ++i)
     //        h.insert(i);
+//    98, 97,86,57,88,75,70,36,20,29,44
     
     h.insert(57);
     h.insert(98);
@@ -33,6 +34,14 @@ int main(int argc, const char * argv[]) {
     h.insert(88);
 
     h.print();
+    h.remove(); 
+    h.print();
+    h.remove();
+    h.print();
+    h.remove();
+    h.print();
+    h.remove();
+    h.print();
     h.remove();
     h.print();
     h.remove();
@@ -41,7 +50,11 @@ int main(int argc, const char * argv[]) {
     h.print();
     h.remove();
     h.print();
-    
+    h.remove();
+    h.print();
+    h.remove();
+    h.print();
+//
     
     
     
