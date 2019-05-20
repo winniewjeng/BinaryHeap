@@ -28,8 +28,8 @@ public:
     void insert(T data) {
         heapFxns<T>::insert(v, data);
     }
-    void remove() {
-        heapFxns<T>::remove(v);
+    T remove() {
+        return heapFxns<T>::remove(v);
     }
     void print() {
         heapFxns<T>::print(v);

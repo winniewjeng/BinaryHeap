@@ -25,7 +25,7 @@ public:
     
     void insert(vector<T>& v, T data);
     void shuffleUp(vector<T>& v, unsigned long int currentIndex);
-    void remove(vector<T>& v);  // remove the first element of the tree
+    T remove(vector<T>& v);  // remove the first element of the tree
     void shuffleDown(vector<T>& v, unsigned long int currentIndex = 1); // call in remove
     void print(vector<T>& v);
 };
@@ -46,14 +46,16 @@ void heapFxns<T>::shuffleUp(vector<T>& v, unsigned long int currentIndex) {
 }
 
 template <typename T>
-void heapFxns<T>::remove(vector<T>& v) {
+T heapFxns<T>::remove(vector<T>& v) {
     if (v.size() == 1) {
         std::cout << "Cannot remove the last item\n";
-        return ;
+        return v.at(1);
     }
+    T hold = v.at(1);
     v.at(1) = v.at(v.size()-1);
     v.pop_back();
     shuffleDown(v);
+    return hold;
 }
 
 template <typename T>

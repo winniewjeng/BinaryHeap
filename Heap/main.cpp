@@ -18,12 +18,12 @@ int main(int argc, const char * argv[]) {
     int arr[] = {98, 97,86,57,88,75,70,36,20,29,44};
     for (int i = 0; i < 11; ++i) {
         h.insert(arr[i]);
-        h.print();
+//        h.print();
     }
     for (int i = 0; i < 11; ++i) {
-        h.remove();
-        h.print();
+        cout << h.remove() << "\n";
     }
+    
     
     return 0;
 }
